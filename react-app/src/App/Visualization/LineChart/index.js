@@ -34,13 +34,19 @@ const LineChart = ({data, markers, xScale, yScale}) => {
     return (
         <g className="line-chart">
             <path className="line" d={line(data)}/>
-            {
-                markers.map(marker => {
-                    return (
-                        <Marker key={`marker-for-${marker.id}`} item={marker}/>
-                    )
-                })
-            }
+            <line className="sample-line"
+                  x1={markers[markers.length / 2].x}
+                  x2={markers[markers.length / 2].x}
+                  y1={yScale.range()[0]} y2={yScale.range()[1]}/>
+            <circle className="sample-marker" cx={markers[markers.length / 2].x} cy={markers[markers.length / 2].y}
+                    r={10}/>
+            {/*{*/}
+            {/*    markers.map(marker => {*/}
+            {/*        return (*/}
+            {/*            <Marker key={`marker-for-${marker.id}`} item={marker}/>*/}
+            {/*        )*/}
+            {/*    })*/}
+            {/*}*/}
         </g>
     )
 };

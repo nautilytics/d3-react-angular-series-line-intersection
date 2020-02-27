@@ -9,7 +9,21 @@
       fill: none;
     }
 
-    circle {
+    .sample-line {
+      fill: none;
+      stroke-width: 1px;
+      stroke-dasharray: 5, 5;
+      stroke: lightcoral;
+    }
+
+    .sample-marker {
+      fill: white;
+      stroke: lightcoral;
+      stroke-dasharray: 5, 5;
+      stroke-width: 2px;
+    }
+
+    .marker {
       stroke: none;
       fill: green;
     }
