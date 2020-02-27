@@ -1,7 +1,7 @@
 # D3 React/Angular Series
 ### Line Intersections
 
-An exploration of placing points on a line without knowing their y-positions.
+An exploration of placing points on a line without knowing their y-positions with [kld intersections](https://github.com/thelonious/kld-intersections).
 
 Example App - http://d3-react-angular-series-line-intersection.s3-website-us-east-1.amazonaws.com/
 
