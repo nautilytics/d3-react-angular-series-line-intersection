@@ -1,0 +1,6 @@
+<svg [attr.width.px]="width" [attr.height.px]="height">
+  <g [attr.transform]="gTransform">
+    <g app-line-chart [item]="formatLineChart()"></g>
+    <g app-axes [item]="formatAxes()"></g>
+  </g>
+</svg>

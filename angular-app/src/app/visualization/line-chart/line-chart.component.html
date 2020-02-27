@@ -1,0 +1,6 @@
+<svg:g class="line-chart">
+  <svg:path class="line" [attr.d]="getLinePath()">
+  </svg:path>
+  <svg:g app-marker *ngFor="let marker of markers" [item]="formatMarkerItem(marker)">
+  </svg:g>
+</svg:g>

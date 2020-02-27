@@ -1,0 +1,33 @@
+.app {
+  width: calc(100vw * 0.95);
+  height: calc(100vh * 0.95);
+
+  .line-chart {
+
+    path {
+      stroke: steelblue;
+      fill: none;
+    }
+
+    circle {
+      stroke: none;
+      fill: green;
+    }
+  }
+
+  .axes {
+    path,
+    line {
+      fill: none;
+      stroke: gray;
+      shape-rendering: crispEdges;
+    }
+
+    text {
+      text-rendering: optimizeLegibility;
+      font-size: .75rem;
+      fill: gray;
+      stroke: none;
+    }
+  }
+}
